@@ -1,0 +1,41 @@
+.container{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;    
+    flex-direction: column; 
+    flex-wrap:wrap;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    flex:51%;
+    /* border: 1px solid black; */
+}
+
+h1{
+    max-width: 550px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 1.2rem;
+    }
+}
+
+img{
+    width: 84px;
+    height: 84px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.error-message{
+    color:brown;
+}

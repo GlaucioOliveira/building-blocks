@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="item">
+        <img src="./assets/newsletter-logo.webp" sizes="100vw" alt="Newsletter Logo">
+    </div>
+    <div class="item">        
+        <h1>Notícias de Tecnologia para quem não tem tempo de ler notícias.</h1>
+        <p class="center-text">Junte-se à nossa turma de 100 leitores ativos.</p>    
+    </div>
+    <div class="item">
+        <div class="p-inputgroup">                
+            <input type="text" pInputText [(ngModel)]="email" placeholder="Seu email principal">         
+            <button type="button" pButton pRipple label="Inscrever-se" (click)="subscribeNewsLetter()"></button>
+        </div>
+    </div>
+    <div class="item">
+        <p class="error-message" *ngIf="errorMessage"><i class="pi pi-exclamation-circle"></i> {{errorMessage}}</p>
+    </div>
+</div>
